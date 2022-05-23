@@ -141,6 +141,7 @@ namespace Praktikum13
             }
             else
             {
+                MessageBox.Show("Data sudah tersimpan");
                 sqlConnect.Open();
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlCommand.ExecuteNonQuery();
